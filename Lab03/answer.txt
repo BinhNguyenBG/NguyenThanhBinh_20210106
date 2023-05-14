@@ -1,0 +1,14 @@
+2.1. I prefer addDigitalVideoDisc(DigitalVideoDisc [] dvdList) as we do not have to using method overloading many times.
+
+3. Java is a pass by value programming language.
+- swap method
+In the swap method, the two parameters o1 and o2 are local variables that hold copies of the references to jungleDVD and cinderellaDVD, respectively. 
+The swap method swaps the values of these local variables, but it does not affect the references held by the original variables jungleDVD and cinderellaDVD in the main method.
+- changeTitle method
+In the changeTitle method, the parameter dvd holds a copy of the reference to the DigitalVideoDisc object that jungleDVD references. 
+The method then sets the title field of that object to the value of the title parameter passed in. 
+Therefore, the title field of the DigitalVideoDisc object referenced by jungleDVD is updated to the value of cinderellaDVD's title.
+The subsequent line dvd = new DigitalVideoDisc(oldTitle); creates a new DigitalVideoDisc object with the old title of dvd, 
+but this new object is assigned to the local variable dvd, which does not affect the reference held by the original jungleDVD variable in the main method. 
+Therefore, the original DigitalVideoDisc object that jungleDVD references still has its title updated to the value of cinderellaDVD's title.
+
