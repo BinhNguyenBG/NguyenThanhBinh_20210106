@@ -12,3 +12,5 @@ The subsequent line dvd = new DigitalVideoDisc(oldTitle); creates a new DigitalV
 but this new object is assigned to the local variable dvd, which does not affect the reference held by the original jungleDVD variable in the main method. 
 Therefore, the original DigitalVideoDisc object that jungleDVD references still has its title updated to the value of cinderellaDVD's title.
 
+6. The return type of the toString() method should be String.
+
